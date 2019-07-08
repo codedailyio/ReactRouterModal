@@ -13,23 +13,17 @@ export default class ProfilePage extends Component {
           path={`${this.props.match.url}/modal`}
           render={() => {
             return (
-              <Modal>
+              <Modal
+                onClick={() => {
+                  this.props.history.push("/profile");
+                }}
+              >
                 <div
                   style={{
-                    position: "fixed",
-                    left: 0,
-                    top: 0,
-                    bottom: 0,
-                    right: 0,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    backgroundColor: "rgba(0,0,0,.2)",
-                    color: "#FFF",
-                    fontSize: "40px",
-                  }}
-                  onClick={() => {
-                    this.props.history.push("/profile");
+                    height: '100%'
                   }}
                 >
                   Look at the modal!
