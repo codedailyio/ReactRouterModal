@@ -15,7 +15,7 @@ export default class ProfilePage extends Component {
             return (
               <Modal
                 onClick={() => {
-                  this.props.history.push("/profile");
+                  this.props.history.push(this.props.match.url);
                 }}
               >
                 <div
