@@ -26,7 +26,7 @@ export default class ProfilePage extends Component {
                     height: '100%'
                   }}
                 >
-                  Look at the modal!
+                  Edit Profile Modal!
                 </div>
               </Modal>
             );
